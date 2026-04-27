@@ -20,7 +20,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # Add a header with a simulated logo/title area
-st.image("", width=150)
+st.image("kemri_logo.png", width=150)
 st.title("Cardiovascular Disease Risk Prediction Dashboard")
 st.subheader("KEMRI | SLAS Research Program")
 
