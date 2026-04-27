@@ -1,0 +1,15 @@
+[theme]
+# KEMRI-style Dark Blue for primary actions
+primaryColor = "#1E3E72" 
+
+# Light background for a clean research look
+backgroundColor = "#FFFFFF" 
+
+# Soft gray for sidebars and input widgets
+secondaryBackgroundColor = "#F0F2F6" 
+
+# Professional dark text
+textColor = "#262730" 
+
+# Modern sans-serif font
+font = "sans serif"
