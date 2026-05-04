@@ -29,7 +29,7 @@ import joblib
 import numpy as np
 
 # 1. Load your pre-trained model
-model = joblib.load('cvd_rf_model.pkl')
+model = joblib.load('cvd_prediction_risk.pkl')
 
 st.title("Cardiovascular Disease Risk Predictor")
 st.write("Enter behavioral and clinical data to assess CVD risk.")
