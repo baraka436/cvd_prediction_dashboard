@@ -37,10 +37,6 @@ st.divider()
 st.markdown("<h3 style='text-align: center;'>Your Health Profile. At-a-Glance</h3>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center;'>Enter behavioral and clinical data to assess CVD risk.</p>", unsafe_allow_html=True)
 
-
-# 1. Load your pre-trained model
-model = joblib.load('cvd_prediction_risk.pkl')
-
 # 2. Layout with Columns for better UI
 col1, col2 = st.columns(2)
 
