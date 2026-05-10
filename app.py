@@ -24,7 +24,7 @@ st.markdown("""
 # Create three columns; logo goes in the center one
 left_co, cent_co, last_co = st.columns([1, 1, 1])
 with cent_co:
-    st.image("kemri_logo.png", width=150)
+    st.image("cardiolens_logo.png", width=150)
 
 # Centered Titles and Branding
 st.markdown("<h1 style='text-align: center;'>CardioLens</h1>", unsafe_allow_html=True)
