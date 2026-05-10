@@ -30,8 +30,6 @@ st.subheader("KEMRI | SLAS Research Program")
 st.title("KEMRI | SLAS CVD Risk Dashboard")
 st.markdown("### Enter the required data below to access your personalized cardiovascular disease risk assessment")
 
-<<<<<<< HEAD
-=======
 # 1. Load your pre-trained model
 model = joblib.load('cvd_prediction_risk.pkl')
 
@@ -39,7 +37,6 @@ st.title("Cardiovascular Disease Risk Predictor")
 st.write("Enter behavioral and clinical data to assess CVD risk.")
 
 # 2. Layout with Columns for better UI
->>>>>>> 78c410912231dd3562cc87ef9c13eba9ad3d3ddb
 col1, col2 = st.columns(2)
 
 with col1:
