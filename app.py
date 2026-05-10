@@ -3,7 +3,7 @@ import joblib
 import numpy as np
 
 # 1. Page & Model Setup
-st.set_page_config(page_title="KEMRI CVD Risk Predictor", page_icon="🏥")
+st.set_page_config(page_title="CardioLens : The AI-Driven Risk Engine", page_icon="🏥")
 model = joblib.load('cvd_prediction_risk.pkl') # Loaded your Mentor-guided RF model
 
 # Custom CSS to improve the "Look & Feel"
@@ -24,16 +24,15 @@ st.markdown("""
 
 # Add a header with a simulated logo/title area
 st.image("kemri_logo.png", width=150)
-st.title("Cardiovascular Disease Risk Prediction Dashboard")
-st.subheader("KEMRI | SLAS Research Program")
+st.title("CardioLens")
+st.subheader("The AI-Driven Risk Engine")
 
-st.title("KEMRI | SLAS CVD Risk Dashboard")
-st.markdown("### Enter the required data below to access your personalized cardiovascular disease risk assessment")
+st.markdown("### Experience The Future Of Medicine ")
 
 # 1. Load your pre-trained model
 model = joblib.load('cvd_prediction_risk.pkl')
 
-st.title("Cardiovascular Disease Risk Predictor")
+st.title("Your Health Profile.At-a-Glance")
 st.write("Enter behavioral and clinical data to assess CVD risk.")
 
 # 2. Layout with Columns for better UI
