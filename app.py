@@ -2,9 +2,19 @@ import streamlit as st
 import joblib
 import numpy as np
 
+# This ensures the model is loaded ONCE and shared
+
+
+# --- IMPORTANT: DELETE any other "model = joblib.load" lines below this ---
+
+
 # 1. Page & Model Setup
 st.set_page_config(page_title="CardioLens : The AI-Driven Risk Engine", page_icon="🏥")
-model = joblib.load('cvd_prediction_risk.pkl') # Loaded your Mentor-guided trained model
+@st.cache_resource
+def load_model():
+    return joblib.load('cvd_prediction_risk.pkl')
+
+model = load_model() # Loaded your Mentor-guided trained model
 
 # Custom CSS to improve the "Look & Feel"
 st.markdown("""
