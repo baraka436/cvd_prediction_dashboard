@@ -4,7 +4,7 @@ import numpy as np
 
 # 1. Page & Model Setup
 st.set_page_config(page_title="CardioLens : The AI-Driven Risk Engine", page_icon="🏥")
-model = joblib.load('cvd_prediction_risk.pkl') # Loaded your Mentor-guided RF model
+model = joblib.load('cvd_prediction_risk.pkl') # Loaded your Mentor-guided trained model
 
 # Custom CSS to improve the "Look & Feel"
 st.markdown("""
@@ -21,19 +21,25 @@ st.markdown("""
     }
     </style>
     """, unsafe_allow_html=True)
+# Create three columns; logo goes in the center one
+left_co, cent_co, last_co = st.columns([1, 1, 1])
+with cent_co:
+    st.image("kemri_logo.png", width=150)
 
-# Add a header with a simulated logo/title area
-st.image("kemri_logo.png", width=150)
-st.title("CardioLens")
-st.subheader("The AI-Driven Risk Engine")
+# Centered Titles and Branding
+st.markdown("<h1 style='text-align: center;'>CardioLens</h1>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center;'>The AI-Driven Risk Engine</h3>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; font-style: italic;'>Experience The Future Of Medicine</p>", unsafe_allow_html=True)
 
-st.markdown("### Experience The Future Of Medicine ")
+st.divider()
+
+# Profile Heading
+st.markdown("<h3 style='text-align: center;'>Your Health Profile. At-a-Glance</h3>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center;'>Enter behavioral and clinical data to assess CVD risk.</p>", unsafe_allow_html=True)
+
 
 # 1. Load your pre-trained model
 model = joblib.load('cvd_prediction_risk.pkl')
-
-st.title("Your Health Profile.At-a-Glance")
-st.write("Enter behavioral and clinical data to assess CVD risk.")
 
 # 2. Layout with Columns for better UI
 col1, col2 = st.columns(2)
