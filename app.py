@@ -9,7 +9,7 @@ import numpy as np
 
 
 # 1. Page & Model Setup
-st.set_page_config(page_title="CardioLens : The AI-Driven Risk Engine", page_icon="🏥")
+st.set_page_config(page_title="CardioLens : The AI-Based Cardiovascular Disease Prediction Tool", page_icon="🏥")
 @st.cache_resource
 def load_model():
     return joblib.load('cvd_prediction_risk.pkl')
@@ -38,7 +38,7 @@ with cent_co:
 
 # Centered Titles and Branding
 st.markdown("<h1 style='text-align: center;'>CardioLens</h1>", unsafe_allow_html=True)
-st.markdown("<h3 style='text-align: center;'>The AI-Driven Risk Engine</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center;'>The AI-Based Cardiovascular Disease Prediction Tool</h3>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center; font-style: italic;'>Experience The Future Of Medicine</p>", unsafe_allow_html=True)
 
 st.divider()
